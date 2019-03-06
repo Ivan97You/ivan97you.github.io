@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TopSport</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="relax.css">
+    </head>
+    <body>
+            <div class="header">
+  <a href="index.html" class="logo">TopSport</a>
+  <div class="header-right">
+    <a href="index.html">Home</a>
+    <a class="active" href="vw.html">VOLKSWAGEN</a>
+    <a href="fca.html">FCA</a>
+    <a href="daimler.html">DAIMLER</a>
+    <a href="bmw.html">BMW</a>
+    <a href="about.html">About</a>
+  </div>
+</div>
+ 
+  <img src="image/vw-lambo.jpg" alt="Huracan perfomante" height="700"
+                 width='1200' class="lambo">
+         
+    <img src="image/lambo-spec.jpg" alt="Huracan spec" height="700"
+                 width='1200' class="lambo">
+ 
+    
+    <div class="buggati">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="bugatti fade">
+    <div class="numbertext"></div>
+    <img src="image/bugatti-1.jpg" style="width:100%">
+    <div class="text">Bugatti</div>
+  </div>
+
+  <div class="bugatti fade">
+    <div class="numbertext"></div>
+    <img src="image/bugatti-2.jpg" style="width:100%">
+    <div class="text">Bugatti</div>
+  </div>
+
+  <div class="bugatti fade">
+    <div class="numbertext"></div>
+    <img src="image/bugatti-3.jpg" style="width:100%">
+    <div class="text">Bugatti</div>
+  </div>
+  
+</div>
+        
+
+    <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("bugatti");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+    </script>
+    
+    <img src="image/bugatti-spec.jpg" alt="bugatti spec" height="700"
+                 width='1200' class="lambo">
+    </body>
+</html>

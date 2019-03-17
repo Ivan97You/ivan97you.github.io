@@ -1,7 +1,7 @@
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: transparent;
+  background-color: white;
   padding: 10px 5px;
   z-index: 1000;
 }

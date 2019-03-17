@@ -21,7 +21,7 @@ and open the template in the editor.
 </script>
     </head>
     <body>
-            <div class="header">
+            <div class="header" id="myheader">
   <a href="index.html" class="logo">TopSport</a>
   <div class="header-right">
     <a href="index.html">Home</a>
@@ -32,6 +32,21 @@ and open the template in the editor.
     <a href="about.html">About</a>
   </div>
 </div>
+        
+        <script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myheader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
         
          <div class="slideshow-container">
 

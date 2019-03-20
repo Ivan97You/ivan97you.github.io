@@ -47,7 +47,64 @@ function myFunction() {
 }
 </script>
         
-         <img src="image/about.jpg" alt=" about us" height="1000"
-                 width='1000' class="lambo">
+        <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image/vw.jpg" style="width:100%">
+    <div class="text">Volkswagen</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image/fca.jpg" style="width:100%">
+    <div class="text">FCA</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image/daimler.jpg" style="width:100%">
+    <div class="text">DAIMLER</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="image/bmw.jpg" style="width:100%">
+    <div class="text">BMW</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+        
+
+    <script>
+    var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+    </script>
+    
+<img src="image/about_1.jpg" alt="about_1" class="lambo">
+
+<p><button onclick="copartner()" style="background-color: #bbb; height: 50px;width: 150px "
+           >View Co-operation Partner</button></p>
+<script>
+function copartner() {
+  location.replace("copartner.html")
+}
+</script>
     </body>
 </html>
